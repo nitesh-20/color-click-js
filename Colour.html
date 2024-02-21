@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-JS</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>magic</h1>
+        <button onclick="color()">CLICK</button>
+    </div>
+<script>
+    const color=()=>{
+        const random=Math.floor(Math.random()*16777215)
+        // console.log(random);
+        const x='#'+ random.toString(16);
+        console.log(x);
+        document.body.style.backgroundColor=x;
+    }
+</script>
+
+</body>
+</html>
